@@ -14,6 +14,8 @@ if os.getenv('RUNENVIRONMENT') == "Production":
 else:
     app.config.from_object(DevelopmentConfig())
 
+#hello world
+
 db.init_app(app)
 
 def create_tables():
