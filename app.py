@@ -50,7 +50,7 @@ def login():
         user = User.query.filter_by(username=username).first()
 
         if user and check_password_hash(user.password, password):
-            session['user_id'] = user.id
+            db.session['user_id'] = user.id
             return redirect('/')
         else:
             return 'Invalid username or password', 401
