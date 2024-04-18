@@ -19,6 +19,6 @@ version: 0.2
 phases:
   build:
     commands:
-      - docker build -t git.systementor.se/yacloud/pythonapi .
-      - docker login -u yacloud -p yacloud1 https://git.systementor.se
-      - docker push git.systementor.se/yacloud/pythonapi 
+      - docker build -t git.systementor.se/marco.vrban/trainingapi .
+      - docker login -u marco.vrban -p yacloud1 https://git.systementor.se
+      - docker push git.systementor.se/marco.vrban/trainingapi 
